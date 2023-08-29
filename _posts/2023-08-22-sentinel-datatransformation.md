@@ -8,6 +8,8 @@ tags: [Sentinel]
 comments: true
 ---
 
+When we come across non-Sentinel log ingestion and delve deeper into the issue, we must pay attention to data that is being sent and how we can use it, in order to help us to detect environmental threats. We should also watch if we have duplicate data, so that we can improve and also reduce the costs of a solution such as Microsoft Sentinel(not cheap! =D). It can happen in some cases of ingesting duplicate data in different tables and can generate an unnecessary additional cost. 
+
 **Introduction**
 
 Ingestion-time data transformation provides customers with more control over the ingested data. Supplementing the pre-configured, hardcoded workflows that create standardized tables, ingestion time-transformation adds the capability to filter and enrich the output tables, even before running any queries. Custom log ingestion uses the Custom Log API to normalize custom-format logs so they can be ingested into certain standard tables, or alternatively, to create customized output tables with user-defined schemas for ingesting these custom logs.
