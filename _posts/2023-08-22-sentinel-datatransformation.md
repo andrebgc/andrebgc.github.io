@@ -14,7 +14,6 @@ When we come across non-Sentinel log ingestion and delve deeper into the issue, 
 
 Ingestion-time data transformation provides customers with more control over the ingested data. Supplementing the pre-configured, hardcoded workflows that create standardized tables, ingestion time-transformation adds the capability to filter and enrich the output tables, even before running any queries. Custom log ingestion uses the Custom Log API to normalize custom-format logs so they can be ingested into certain standard tables, or alternatively, to create customized output tables with user-defined schemas for ingesting these custom logs.
 
-
 **The Problem**
 
 When we set up a new data connector that uses CEF or Syslog, we need a log collector so that Microsoft Sentinel can ingest those logs so we can use it to create use cases and more. However, as soon as we install the collector, following Microsoft's recommendations, we get the following message below, which informs us about using the same collector as Syslog and CEF:
@@ -28,9 +27,7 @@ The possible solutions we have on the table are:
 • Separate the collectors so that each one receives a type of log (Syslog/CEF) - But in this scenario, what if the client had a budget problem, and didn't have the capital to create more than one collector, for example; This solution would not be viable.
 • Using Data Transformation - What seems to be the best solution for this scenario, because we can filter what exactly we want.
 
-
 **Syslog vs CEF - A brief explanation**
-
 
 Syslog is an event logging protocol that is common to Linux. You can use the Syslog daemon built into Linux devices and appliances to collect local events of the types you specify, and have it send those events to Microsoft Sentinel using the Log Analytics agent for Linux (formerly known as the OMS agent).
 
@@ -43,7 +40,6 @@ CEF normalizes the data, making it more immediately useful for analysis with Mic
 Below is a working example of a CEF/Syslog collector using the LogAnalytics Agent. Note that in the configuration we use CEF, TCP, 25226 and Syslog, UDP, 25224. These ports are used by the agent to send logs to Microsoft Sentinel Workspace through RestAPI over TLS on port 443.
 
 ![2](../assets/img/2023-08-22/2.png)
-
 
 **Solution: Data Transformation**
 
