@@ -8,7 +8,7 @@ tags: [Sentinel]
 comments: true
 ---
 
-When we come across non-Sentinel log ingestion and delve deeper into the issue, we must pay attention to data that is being sent and how we can use it, in order to help us to detect environmental threats. We should also watch if we have duplicate data, so that we can improve and also reduce the costs of a solution such as Microsoft Sentinel(not cheap! =D). It can happen in some cases of ingesting duplicate data in different tables and can generate an unnecessary additional cost. 
+When we come across with Microsoft Sentinel log ingestion we must pay attention to data that is being sent and how we can use it, in order to help us to detect environmental threats. We should also watch if we have duplicate data, so that we can improve and also reduce the costs of a solution such as Microsoft Sentinel(not cheap! =D). It can happen in some cases of ingesting duplicate data in different tables and can generate an unnecessary additional cost. 
 
 **Introduction**
 
