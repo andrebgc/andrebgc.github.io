@@ -1,3 +1,13 @@
+---
+layout: post
+title: Playbook, Runbooks, and all the confusion behind it
+subtitle: Diff between Playbooks and Runbooks
+gh-repo: andrebgc/mainpage
+gh-badge: [star, fork, follow]
+tags: [Sentinel]
+comments: true
+---
+
 **List of Resources to make this article**
 
 https://www.sumologic.com/blog/the-difference-between-playbooks-and-runbooks-in-incident-response/
